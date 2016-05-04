@@ -36,6 +36,13 @@
 		4543CC801CD09540006E4F2E /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4543CC7F1CD09540006E4F2E /* BaseController.swift */; };
 		4543CC881CD0AAE6006E4F2E /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 4543CC871CD0AAE6006E4F2E /* Cartfile */; };
 		4543CCAA1CD19BA4006E4F2E /* HomePageNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4543CCA91CD19BA4006E4F2E /* HomePageNavigationView.swift */; };
+		454B5D101CDA022100C57507 /* CPMarketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454B5D0F1CDA022100C57507 /* CPMarketCell.swift */; };
+		454B5D121CDA023E00C57507 /* CPMarketCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 454B5D111CDA023E00C57507 /* CPMarketCell.xib */; };
+		45FB040A1CD998290025F301 /* RecommendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FB04091CD998290025F301 /* RecommendView.swift */; };
+		45FB040D1CD99EE30025F301 /* CPAnalystCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FB040C1CD99EE30025F301 /* CPAnalystCell.swift */; };
+		45FB040F1CD99FEE0025F301 /* CPAnalystContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FB040E1CD99FEE0025F301 /* CPAnalystContentView.swift */; };
+		45FB04111CD9A0200025F301 /* CPAnalystCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FB04101CD9A0200025F301 /* CPAnalystCellView.swift */; };
+		45FB04131CD9A1CB0025F301 /* myDog.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 45FB04121CD9A1CB0025F301 /* myDog.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +110,13 @@
 		4543CC7F1CD09540006E4F2E /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 		4543CC871CD0AAE6006E4F2E /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		4543CCA91CD19BA4006E4F2E /* HomePageNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageNavigationView.swift; sourceTree = "<group>"; };
+		454B5D0F1CDA022100C57507 /* CPMarketCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPMarketCell.swift; sourceTree = "<group>"; };
+		454B5D111CDA023E00C57507 /* CPMarketCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CPMarketCell.xib; sourceTree = "<group>"; };
+		45FB04091CD998290025F301 /* RecommendView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendView.swift; sourceTree = "<group>"; };
+		45FB040C1CD99EE30025F301 /* CPAnalystCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPAnalystCell.swift; sourceTree = "<group>"; };
+		45FB040E1CD99FEE0025F301 /* CPAnalystContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPAnalystContentView.swift; sourceTree = "<group>"; };
+		45FB04101CD9A0200025F301 /* CPAnalystCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPAnalystCellView.swift; sourceTree = "<group>"; };
+		45FB04121CD9A1CB0025F301 /* myDog.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = myDog.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +158,7 @@
 		4501A4DC1CD1F5B000A86149 /* ScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				45FB04081CD989C80025F301 /* RecommendView */,
 				4501A4DD1CD1F5DD00A86149 /* CPHomePageScrollView.swift */,
 				4501A4DF1CD1F67D00A86149 /* ScrollViewDelegate.swift */,
 			);
@@ -407,6 +422,28 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		45FB04081CD989C80025F301 /* RecommendView */ = {
+			isa = PBXGroup;
+			children = (
+				45FB04091CD998290025F301 /* RecommendView.swift */,
+				45FB040B1CD99EC10025F301 /* Cell */,
+			);
+			path = RecommendView;
+			sourceTree = "<group>";
+		};
+		45FB040B1CD99EC10025F301 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				45FB04121CD9A1CB0025F301 /* myDog.jpeg */,
+				45FB040C1CD99EE30025F301 /* CPAnalystCell.swift */,
+				45FB040E1CD99FEE0025F301 /* CPAnalystContentView.swift */,
+				45FB04101CD9A0200025F301 /* CPAnalystCellView.swift */,
+				454B5D0F1CDA022100C57507 /* CPMarketCell.swift */,
+				454B5D111CDA023E00C57507 /* CPMarketCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -517,8 +554,10 @@
 				4543CC611CD05E93006E4F2E /* CPScore.storyboard in Resources */,
 				4543CC441CD05C78006E4F2E /* Info.plist in Resources */,
 				4543CC431CD05C78006E4F2E /* Assets.xcassets in Resources */,
+				454B5D121CDA023E00C57507 /* CPMarketCell.xib in Resources */,
 				4543CC711CD06300006E4F2E /* Main.storyboard in Resources */,
 				4543CC5E1CD05E93006E4F2E /* CPHomePage.storyboard in Resources */,
+				45FB04131CD9A1CB0025F301 /* myDog.jpeg in Resources */,
 				4543CC481CD05C9A006E4F2E /* LaunchScreen.storyboard in Resources */,
 				4543CC5F1CD05E93006E4F2E /* CPMarket.storyboard in Resources */,
 				4543CC7E1CD08D44006E4F2E /* CPMy.storyboard in Resources */,
@@ -564,14 +603,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				454B5D101CDA022100C57507 /* CPMarketCell.swift in Sources */,
 				4501A4E01CD1F67D00A86149 /* ScrollViewDelegate.swift in Sources */,
 				4543CC741CD06C04006E4F2E /* CPUIViewController.swift in Sources */,
 				4543CC801CD09540006E4F2E /* BaseController.swift in Sources */,
+				45FB040A1CD998290025F301 /* RecommendView.swift in Sources */,
 				4501A4EF1CD208DF00A86149 /* CPFontMacro.swift in Sources */,
 				4543CC421CD05C78006E4F2E /* AppDelegate.swift in Sources */,
 				4501A4E31CD1FA7600A86149 /* HomepageNotificationMacro.swift in Sources */,
 				4543CC6E1CD06087006E4F2E /* DevicesMacro.swift in Sources */,
 				4543CC7C1CD08B61006E4F2E /* CPMyViewController.swift in Sources */,
+				45FB040D1CD99EE30025F301 /* CPAnalystCell.swift in Sources */,
+				45FB040F1CD99FEE0025F301 /* CPAnalystContentView.swift in Sources */,
+				45FB04111CD9A0200025F301 /* CPAnalystCellView.swift in Sources */,
 				4543CC781CD06D0D006E4F2E /* CPMarketViewController.swift in Sources */,
 				4543CC671CD05F61006E4F2E /* CPMainTabbarController.swift in Sources */,
 				4543CC6F1CD06087006E4F2E /* UtilityMacro.swift in Sources */,

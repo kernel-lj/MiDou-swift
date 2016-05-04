@@ -21,6 +21,8 @@ class CPUIViewController: BaseController {
         super.viewDidLoad()
         
         
+        self.automaticallyAdjustsScrollViewInsets = false
+        
         addScrollView()
         
         self.navigationItem.titleView = HomePageNavigationView.init(scrollview: scrollView)
@@ -28,7 +30,6 @@ class CPUIViewController: BaseController {
         TL_RAC_BUTTON(leftBBI) { _ in  self.abc() }
         TL_RAC_BUTTON(rightBBI) { _ in self.cctv() }
         
-//        print("1111 == \(WScreen)")
        
     }
 

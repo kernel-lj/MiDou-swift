@@ -10,14 +10,10 @@ import UIKit
 
 class CPHomePageScrollView: UIScrollView {
 
-    /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func drawRect(rect: CGRect) {
-        // Drawing code
-    }
-    */
+  
     var srollViewDelegate:ScrollViewDelegate!
+    var recommendView:RecommendView!
+    
     
     init(vc:UIViewController){
         super.init(frame: Rect(0, y: 64, width: WScreen, height: HScreen - 64))
@@ -26,13 +22,17 @@ class CPHomePageScrollView: UIScrollView {
         vc.view.addSubview(self)
         
         srollViewDelegate = ScrollViewDelegate.init(scrollView: self)
-//        _srollViewDelegate = [[CPHomPageSrollViewDelegate alloc] initWithScrollView:self];
-//        [self addSubViews];
+        self.addSubviews()
         
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func addSubviews() {
+        recommendView = RecommendView.init(scrollView: self)
+        
     }
     
 
