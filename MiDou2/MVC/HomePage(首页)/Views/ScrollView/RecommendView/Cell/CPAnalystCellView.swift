@@ -32,7 +32,8 @@ class CPAnalystCellView: UIView {
         
         //1.头像图片
         imageView = UIImageView.init()
-        imageView.image = UIImage.init(named: "myDog.jpeg")
+        imageView.radiusWith(20, backgroundImage: UIImage.init(named: "myDog.jpeg"))
+
 
         
         //2.黄V图片

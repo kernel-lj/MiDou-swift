@@ -32,8 +32,6 @@ class CPAnalystCell: UITableViewCell {
             cell = UITableViewCell.init(style: .Default, reuseIdentifier: ID as String)
         }
         
-        print("1111 == \(cell)")
-
         let analystContentView:CPAnalystContentView = CPAnalystContentView.init(frame:  CGRectMake(0, 0, WScreen, 92))
         cell!.contentView.addSubview(analystContentView)
 

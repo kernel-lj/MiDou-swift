@@ -16,7 +16,8 @@ class CPMarketCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        headPortaitImageView.image = TL_IMAGE("myDog.jpeg")
+        headPortaitImageView.radiusWith(20, backgroundImage: UIImage.init(named: "myDog.jpeg"))
+
         
     }
 
