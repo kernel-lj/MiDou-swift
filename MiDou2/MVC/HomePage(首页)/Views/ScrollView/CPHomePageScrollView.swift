@@ -13,6 +13,9 @@ class CPHomePageScrollView: UIScrollView {
   
     var srollViewDelegate:ScrollViewDelegate!
     var recommendView:RecommendView!
+    var indemnityView:IndemnityView!
+    var siteTableView:SiteTableView!
+    var rankView:RankView!
     
     
     init(vc:UIViewController){
@@ -32,6 +35,9 @@ class CPHomePageScrollView: UIScrollView {
     
     func addSubviews() {
         recommendView = RecommendView.init(scrollView: self)
+        indemnityView = IndemnityView.init(scrollView: self)
+        siteTableView = SiteTableView.init(scrollView: self)
+        rankView = RankView.init(scrollView: self)
         
     }
     

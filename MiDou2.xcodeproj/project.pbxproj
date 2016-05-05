@@ -39,6 +39,9 @@
 		454B5D101CDA022100C57507 /* CPMarketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454B5D0F1CDA022100C57507 /* CPMarketCell.swift */; };
 		454B5D121CDA023E00C57507 /* CPMarketCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 454B5D111CDA023E00C57507 /* CPMarketCell.xib */; };
 		454B5D161CDA0AEA00C57507 /* JMRoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454B5D151CDA0AEA00C57507 /* JMRoundedCorner.swift */; };
+		454B5D191CDA19AE00C57507 /* IndemnityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454B5D181CDA19AE00C57507 /* IndemnityView.swift */; };
+		454B5D1D1CDA1BCB00C57507 /* SiteTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454B5D1C1CDA1BCB00C57507 /* SiteTableView.swift */; };
+		454B5D281CDA1CF600C57507 /* RankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454B5D271CDA1CF600C57507 /* RankView.swift */; };
 		45FB040A1CD998290025F301 /* RecommendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FB04091CD998290025F301 /* RecommendView.swift */; };
 		45FB040D1CD99EE30025F301 /* CPAnalystCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FB040C1CD99EE30025F301 /* CPAnalystCell.swift */; };
 		45FB040F1CD99FEE0025F301 /* CPAnalystContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FB040E1CD99FEE0025F301 /* CPAnalystContentView.swift */; };
@@ -114,6 +117,9 @@
 		454B5D0F1CDA022100C57507 /* CPMarketCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPMarketCell.swift; sourceTree = "<group>"; };
 		454B5D111CDA023E00C57507 /* CPMarketCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CPMarketCell.xib; sourceTree = "<group>"; };
 		454B5D151CDA0AEA00C57507 /* JMRoundedCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JMRoundedCorner.swift; sourceTree = "<group>"; };
+		454B5D181CDA19AE00C57507 /* IndemnityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndemnityView.swift; sourceTree = "<group>"; };
+		454B5D1C1CDA1BCB00C57507 /* SiteTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiteTableView.swift; sourceTree = "<group>"; };
+		454B5D271CDA1CF600C57507 /* RankView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankView.swift; sourceTree = "<group>"; };
 		45FB04091CD998290025F301 /* RecommendView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendView.swift; sourceTree = "<group>"; };
 		45FB040C1CD99EE30025F301 /* CPAnalystCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPAnalystCell.swift; sourceTree = "<group>"; };
 		45FB040E1CD99FEE0025F301 /* CPAnalystContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPAnalystContentView.swift; sourceTree = "<group>"; };
@@ -160,7 +166,10 @@
 		4501A4DC1CD1F5B000A86149 /* ScrollView */ = {
 			isa = PBXGroup;
 			children = (
-				45FB04081CD989C80025F301 /* RecommendView */,
+				45FB04081CD989C80025F301 /* RecommendView(推荐) */,
+				454B5D171CDA198000C57507 /* IndemnityTableView(黑单必赔) */,
+				454B5D1B1CDA1BB200C57507 /* SiteTableView(站点) */,
+				454B5D261CDA1CF600C57507 /* RankView(排行) */,
 				4501A4DD1CD1F5DD00A86149 /* CPHomePageScrollView.swift */,
 				4501A4DF1CD1F67D00A86149 /* ScrollViewDelegate.swift */,
 			);
@@ -425,12 +434,40 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		45FB04081CD989C80025F301 /* RecommendView */ = {
+		454B5D171CDA198000C57507 /* IndemnityTableView(黑单必赔) */ = {
+			isa = PBXGroup;
+			children = (
+				454B5D181CDA19AE00C57507 /* IndemnityView.swift */,
+			);
+			name = "IndemnityTableView(黑单必赔)";
+			path = IndemnityTableView;
+			sourceTree = "<group>";
+		};
+		454B5D1B1CDA1BB200C57507 /* SiteTableView(站点) */ = {
+			isa = PBXGroup;
+			children = (
+				454B5D1C1CDA1BCB00C57507 /* SiteTableView.swift */,
+			);
+			name = "SiteTableView(站点)";
+			path = SiteTableView;
+			sourceTree = "<group>";
+		};
+		454B5D261CDA1CF600C57507 /* RankView(排行) */ = {
+			isa = PBXGroup;
+			children = (
+				454B5D271CDA1CF600C57507 /* RankView.swift */,
+			);
+			name = "RankView(排行)";
+			path = RankView;
+			sourceTree = "<group>";
+		};
+		45FB04081CD989C80025F301 /* RecommendView(推荐) */ = {
 			isa = PBXGroup;
 			children = (
 				45FB04091CD998290025F301 /* RecommendView.swift */,
 				45FB040B1CD99EC10025F301 /* Cell */,
 			);
+			name = "RecommendView(推荐)";
 			path = RecommendView;
 			sourceTree = "<group>";
 		};
@@ -619,9 +656,12 @@
 				45FB040D1CD99EE30025F301 /* CPAnalystCell.swift in Sources */,
 				45FB040F1CD99FEE0025F301 /* CPAnalystContentView.swift in Sources */,
 				45FB04111CD9A0200025F301 /* CPAnalystCellView.swift in Sources */,
+				454B5D1D1CDA1BCB00C57507 /* SiteTableView.swift in Sources */,
 				4543CC781CD06D0D006E4F2E /* CPMarketViewController.swift in Sources */,
 				4543CC671CD05F61006E4F2E /* CPMainTabbarController.swift in Sources */,
+				454B5D281CDA1CF600C57507 /* RankView.swift in Sources */,
 				4543CC6F1CD06087006E4F2E /* UtilityMacro.swift in Sources */,
+				454B5D191CDA19AE00C57507 /* IndemnityView.swift in Sources */,
 				4543CCAA1CD19BA4006E4F2E /* HomePageNavigationView.swift in Sources */,
 				4501A4DE1CD1F5DD00A86149 /* CPHomePageScrollView.swift in Sources */,
 				4543CC7A1CD06D28006E4F2E /* CPScoreViewController.swift in Sources */,
